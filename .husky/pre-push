@@ -1,6 +1,3 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
 echo "🧪 Running tests before push..."
 bun run test:run || {
   echo "❌ Tests failed! Push aborted."
